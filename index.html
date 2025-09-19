@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Kandha Realty Developers | Land for Everyone, Dreams Made Real</title>
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- jQuery (required for Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00875a',
+                        secondary: '#000000',
+                        accent: '#FFFFFF',
+                    }
+                }
+            }
+        }
+        $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        animateOut: 'fadeOut',
+        dots: true,
+        nav: true,
+        navText: ["<span class='prev'>&#10094;</span>","<span class='next'>&#10095;</span>"] 
+         });
+      });
+    </script>
+    <style>
+        body {
+          font-family: 'Poppins', sans-serif;
+            }
+        .owl-nav {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          display: flex;
+          justify-content: space-between;
+          transform: translateY(-50%);
+          pointer-events: none; /* avoid blocking slide clicks */
+        }
+
+        .owl-nav button {
+           background: rgba(0,0,0,0.5);
+           color: #fff !important;
+           border: none;
+           padding: 12px 18px;
+           font-size: 28px;
+           border-radius: 50%;
+           cursor: pointer;
+           pointer-events: auto; /* allow clicking arrows */
+           transition: background 0.3s ease;
+        }
+
+        .owl-nav button:hover {
+           background: rgba(0,0,0,0.8);
+        }
+
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        /* Main container for the entire section */
+        .stats-section {
+          padding: 80px 20px;
+          background-color: #fff;
+          font-family: poppins, sans-serif;
+          text-align: center;
+        }
+
+        /* Header styling for the title and subheading */
+        .stats-header-container {
+          max-width: 600px;
+          margin: 0 auto 40px;
+       }
+
+       .stats-heading {
+         font-size: 36px;
+         font-weight: bold;
+         color: #21450c;
+         margin-bottom: 10px;
+        }
+
+        .stats-subheading {
+          font-size: 16px;
+          color: #6c757d;
+          line-height: 1.5;
+        } 
+
+        /* Styling for the green stats bar */
+        .stats-bar {
+           display: flex;
+           justify-content: space-around; /* Distributes items evenly with space between them */
+           align-items: center;
+           background-color: #00a877; /* The vibrant green color */
+           color: #fff;
+           border-radius: 12px;
+           padding: 30px 20px;
+           max-width: 1000px;
+           margin: 0 auto;
+         }
+
+         /* Styling for each individual statistic item */
+        .stat-item {
+          text-align: center;
+          padding: 0 15px; /* Adds internal spacing to prevent items from touching */
+        }
+
+        .stat-number {
+          font-size: 32px;
+          font-weight: bold;
+          margin: 0;
+          line-height: 1.2;
+       }
+
+       .stat-label {
+         font-size: 14px;
+         margin: 5px 0 0;
+         opacity: 0.9;
+        }
+
+        /* Media query for smaller screens to stack the stats vertically */
+       @media (max-width: 768px) {
+         .stats-bar {
+             flex-direction: column; /* Changes the layout to a vertical stack */
+             align-items: stretch;
+             padding: 20px;
+        }
+        .stat-item {
+          margin-bottom: 20px;
+        }
+       .stat-item:last-child {
+         margin-bottom: 0;
+        }
+    }
+        /* Container for all testimonial cards */
+        .testimonials-container {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr); /* Creates two columns with equal width */
+           gap: 20px; /* Space between the cards */
+           padding: 20px;
+         }
+
+        /* Styling for a single testimonial card */
+        .testimonial-card {
+           position: relative;
+           background-color: #fff;
+           border: 1px solid #e0e0e0;
+           border-radius: 15px;
+           padding: 25px;
+           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+           font-family: poppins, sans-serif;
+           display: flex;
+           flex-direction: column;
+        }
+
+        /* Header section with initials and name */
+       .card-header {
+          display: flex;
+          align-items: center;
+          margin-bottom: 15px;
+        }
+
+        .initials-circle {
+          width: 50px;
+          height: 50px;
+          background-color: #e6f7f0; /* Light green background */
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 15px;
+        }
+
+        .initials-circle p {
+          color: #38b2ac; /* Darker green for the text */
+          font-size: 18px;
+          font-weight: bold;
+          margin: 0;
+        }
+
+        .reviewer-info h4 {
+          margin: 0;
+          font-size: 16px;
+          font-weight: bold;
+          color: #333;
+        }
+
+        .reviewer-location {
+           font-size: 12px;
+           color: #555;
+           margin: 5px 0 0;
+        }
+
+        /* Star rating alignment */
+        .rating {
+         display: flex;
+         margin-bottom: 15px;
+        }
+
+        .star {
+          color: gold;
+          font-size: 20px;
+          margin-right: 2px;
+        }  
+
+         /* Review text styling */
+         .review-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 20px;
+         }
+
+         /* Quote icon styling */
+        .quote-icon {
+           position: absolute;
+           top: 15px;
+           right: 20px;
+           font-size: 50px;
+           color: #e0e0e0;
+           line-height: 1;
+           font-family: sans-serif; /* Use a basic font for the quotation mark */
+          }
+          /* Styling for the main container */
+          .cta-section {
+            padding: 80px 20px;
+            background-color: #f8f9fa; /* Light background to make the section stand out */
+            text-align: center;
+          }
+
+          /* Container for the text and buttons to manage width */
+          .cta-content {
+             max-width: 700px;
+             margin: 0 auto; /* This centers the content block itself */
+           }
+
+           /* Styling for the main heading */
+          .cta-heading {
+             font-size: 36px;
+             font-weight: bold;
+             color: #21450c; 
+             margin-bottom: 20px;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              }
+
+        /* Styling for the descriptive text */
+        .cta-text {
+          font-size: 16px;
+          color: #6c757d; /* A subtle gray color */
+          line-height: 1.6;
+          margin-bottom: 30px;
+        }
+
+        /* Container for the buttons to enable Flexbox centering */
+       .cta-buttons {
+         display: flex;
+         justify-content: center; /* Centers the buttons horizontally */
+         gap: 15px; /* Adds space between the buttons */
+         flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+        }
+
+        /* Common button styles */
+        .btn {
+           padding: 15px 30px;
+           border-radius: 8px;
+           font-size: 16px;
+           font-weight: 600;
+           text-decoration: none;
+           transition: all 0.3s ease;
+           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+           border: 1px solid transparent;
+        }
+
+        /* Primary button (Solid Green) */
+        .btn-primary {
+           background-color: #00875a;
+           color: #fff;
+           border-color: #00875a;
+         }
+
+        .btn-primary:hover {
+            background-color: #006e49;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Secondary button (Outlined) */
+        .btn-secondary {
+          background-color: #fff;
+          color: #00875a;
+          border-color: #00875a;
+        }
+
+       .btn-secondary:hover {
+          background-color: #f0fdf9;
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+         from {
+          opacity: 0;
+          transform: translateY(20px);
+         }
+        to {
+           opacity: 1;
+           transform: translateY(0);
+         }
+      }
+
+      /* Base styles for all animated elements */
+      .cta-section,
+      .testimonials-container,
+      .stats-section,
+      .testimonial-card,
+      .stat-item {
+           opacity: 0;
+           transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Fallback transition */
+      }
+
+      /* Class that triggers the animation when added by JavaScript */
+      .cta-section.is-visible,
+      .testimonials-container.is-visible,
+      .stats-section.is-visible {
+          animation: fadeInUp 1s ease-out forwards;
+       }
+
+       /* Individual card animation with staggered delays */
+       .testimonial-card.is-visible,
+       .stat-item.is-visible {
+          animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        /* Staggered delays for testimonial cards */
+        .testimonial-card.is-visible:nth-child(1) { animation-delay: 0.1s; }
+        .testimonial-card.is-visible:nth-child(2) { animation-delay: 0.2s; }
+        .testimonial-card.is-visible:nth-child(3) { animation-delay: 0.3s; }
+        .testimonial-card.is-visible:nth-child(4) { animation-delay: 0.4s; }
+
+        /* Staggered delays for stat items */
+        .stat-item.is-visible:nth-child(1) { animation-delay: 0.1s; }
+        .stat-item.is-visible:nth-child(2) { animation-delay: 0.2s; }
+        .stat-item.is-visible:nth-child(3) { animation-delay: 0.3s; }
+        .stat-item.is-visible:nth-child(4) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body class="font-sans bg-accent text-secondary">
+    <!-- Navigation -->
+    <nav class="bg-accent text-primary shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="./images/logo.jpg" alt="Logo" class="w-12 h-12 md:w-20 md:h-20 object-contain">
+                    <span class="text-2xl font-bold">Shree Kandha Realty Developers</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-gray-300">Home</a>
+                    <a href="About.html" class="hover:text-gray-300">About Us</a>
+                    <a href="projects.html" class="hover:text-gray-300">Projects</a>
+                    <a href="contact.html" class="hover:text-gray-300">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="hidden mobile-menu bg-accent text-primary">
+        <div class="container mx-auto px-6 py-4">
+            <a href="index.html" class="block py-2 hover:text-gray-300">Home</a>
+            <a href="About.html" class="block py-2 hover:text-gray-300">About Us</a>
+            <a href="projects.html" class="block py-2 hover:text-gray-300">Projects</a>
+            <a href="contact.html" class="block py-2 hover:text-gray-300">Contact</a>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <section class="min-h-screen text-center text-accent">
+    <div class="owl-carousel owl-theme w-full">
+
+     <!-- Slide 1 -->
+     <div class="flex items-center justify-center min-h-screen px-6"
+         style="background-image: linear-gradient(rgba(0, 0, 0, 0.244), rgba(0,0,0,0.7)), url('https://img.freepik.com/free-photo/land-plot-with-nature-landscape-location-pin_23-2149937913.jpg'); background-size: cover; background-position: center;">
+      <div class="container mx-auto" data-aos="fade-up">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">Shree Kandha Realty Developers</h1>
+        <!-- <h2 class="text-3xl md:text-5xl font-semibold mb-8">Land for Everyone, Dreams Made Real</h2> -->
+        <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">
+         Land for Everyone, Dreams Made Real!
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#contact" class="bg-accent text-primary px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition duration-300">Contact Us</a>
+          <a href="#projects" class="border-2 border-accent text-accent px-8 py-3 rounded-full font-bold hover:bg-primary transition duration-300">Our Projects</a>
+        </div>
+      </div>
+     </div>
+
+     <!-- Slide 2 -->
+     <div class="flex items-center justify-center min-h-screen px-6"
+         style="background-image: linear-gradient(rgba(0, 0, 0, 0.244), rgba(0,0,0,0.7)), url('https://5.imimg.com/data5/SELLER/Default/2023/10/355852849/IA/OU/YP/10662066/residential-plots-with-gated-community.jpg'); background-size: cover; background-position: center;">
+      <div class="container mx-auto" data-aos="fade-up">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">Shree Kandha Realty Developers</h1>
+        <!-- <h2 class="text-3xl md:text-5xl font-semibold mb-8">Land for Everyone, Dreams Made Real</h2> -->
+        <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">
+          Find the best plots at affordable prices.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#contact" class="bg-accent text-primary px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition duration-300">Get in Touch</a>
+          <a href="#projects" class="border-2 border-accent text-accent px-8 py-3 rounded-full font-bold hover:bg-primary transition duration-300">View Projects</a>
+        </div>
+      </div>
+     </div>
+
+     <!-- Slide 3 -->
+     <div class="flex items-center justify-center min-h-screen px-6"
+         style="background-image: linear-gradient(rgba(0, 0, 0, 0.244), rgba(0, 0, 0, 0.7)), url('https://www.prestigesouthernstar.info/images/prestige/prestige-plots-in-bangalore.webp'); background-size: cover; background-position: center;">
+      <div class="container mx-auto" data-aos="fade-up">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">Shree Kandha Realty Developers</h1>
+        <!-- <h2 class="text-3xl md:text-5xl font-semibold mb-8">Land for everyone, Dreams made Real</h2> -->
+        <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">
+         Land for Everyone, Dreams Made Real!
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#contact" class="bg-accent text-primary px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition duration-300">Book Now</a>
+          <a href="#projects" class="border-2 border-accent text-accent px-8 py-3 rounded-full font-bold hover:bg-primary transition duration-300">Explore More</a>
+        </div>
+      </div>
+    </div>
+
+   </div>
+  </section>
+
+  <!-- Why Choose Us -->
+    <section id="why-us" class="py-20 bg-accent text-primary">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Why Choose Us</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                 <div class="bg-primary bg-opacity-10 p-8 rounded-lg" data-aos="fade-up">
+                    <div class="text-4xl mb-4">
+                        <i data-feather="dollar-sign"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Zero Down Payment EMI Plans</h3>
+                    <p>Flexible payment options with government-approved schemes and transparent transactions.</p>
+                </div>
+                 <div class="bg-primary bg-opacity-10 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl mb-4">
+                        <i data-feather="home"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Low-Risk, High-Return Asset</h3>
+                    <p>Carefully selected plots in developing areas with strong growth potential.</p>
+                </div>
+                <div class="bg-primary bg-opacity-10 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl mb-4">
+                        <i data-feather="map-pin"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">High Appreciation Locations</h3>
+                    <p>Strategic locations near IT corridors, educational institutions, and transport hubs.</p>
+                </div>
+                <!-- <div class="bg-primary bg-opacity-10 p-8 rounded-lg" data-aos="fade-up">
+                    <div class="text-4xl mb-4">
+                        <i data-feather="award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">15+ Years of Trust</h3>
+                    <p>Proven track record with thousands of satisfied customers and completed projects.</p>
+                </div>
+                <div class="bg-primary bg-opacity-10 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl mb-4">
+                        <i data-feather="shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Safe & Transparent Transactions</h3>
+                    <p>All dealings are transparent with proper documentation and legal compliance.</p>
+                </div>
+                <div class="bg-primary bg-opacity-10 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl mb-4">
+                        <i data-feather="users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Customer Support</h3>
+                    <p>Dedicated support team to assist you at every step of your property journey.</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Projects -->
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-primary" data-aos="fade-up">Our Projects</h2>
+            
+            <div class="mb-20" data-aos="fade-up">
+                <h3 class="text-2xl font-semibold mb-8 text-secondary text-center">Completed Projects</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="zoom-in">
+                        <img src="https://constrofacilitator.com/wp-content/uploads/2020/02/plot-layout.jpg" alt="Acharapakkam Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold mb-2 text-primary">Acharapakkam</h4>
+                            <p class="text-gray-600">Acharapakkam, Chennai</p>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+            
+            <div data-aos="fade-up">
+                <h3 class="text-2xl font-semibold mb-8 text-secondary text-center">Ongoing Projects</h3>
+                  <div class="grid md:grid-cols-3 gap-8">
+                      <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://dynamic.realestateindia.com/prop_images/866459/1135180_1-350x350.jpg" alt="Chitra Garden Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold mb-2 text-primary">Chitra Garden</h4>
+                            <p class="text-gray-600">Zamin Endathur, Maduranthagam</p>
+                        </div>
+                    </div>
+                      <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcUfMgdi4ofelBtAIFLF8W93WWeyG2Sde2gw&s" alt="Poyyamozhi Nagar Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold mb-2 text-primary">Poyyamozhi Nagar</h4>
+                            <p class="text-gray-600">Poyyamozhi, Chennai</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://i.pinimg.com/736x/f1/b7/0c/f1b70c584c29e4bf02082ce63c706bd7.jpg" alt="Kanchi Kuberi Nagar Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold mb-2 text-primary">Kanchi Kuberi Nagar</h4>
+                            <p class="text-gray-600">Kanchipuram District</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="zoom-in">
+                        <img src="https://www.experiongroups.com/project_pics/Kraheja%20Plots%20Banner-51454.jpg" alt="Swathi Nagar Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold mb-2 text-primary">Swathi Nagar</h4>
+                            <p class="text-gray-600">Chennai Suburbs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Happy customers section -->
+     <div class="stats-section">
+      <div class="stats-header-container">
+      <h2 class="stats-heading">Happy Customers</h2>
+        <p class="stats-subheading">Over 5000+ satisfied customers have trusted us with their dreams</p>
+     </div>
+  
+     <div class="stats-bar">
+       <div class="stat-item">
+       <h3 class="stat-number">5000+</h3>
+       <p class="stat-label">Happy Families</p>
+     </div>
+     <div class="stat-item">
+      <h3 class="stat-number">98%</h3>
+      <p class="stat-label">Satisfaction Rate</p>
+     </div>
+     <div class="stat-item">
+      <h3 class="stat-number">15+</h3>
+      <p class="stat-label">Years of Trust</p>
+     </div>
+     <div class="stat-item">
+      <h3 class="stat-number">50+</h3>
+      <p class="stat-label">Successful Projects</p>
+     </div>
+    </div>
+   </div>
+     <div class="testimonials-container">
+        <div class="testimonial-card">
+         <div class="card-header">
+          <div class="initials-circle">
+              <p>RK</p>
+            </div>
+            <div class="reviewer-info">
+              <h4>Rajesh Kumar</h4>
+               <p class="reviewer-location">Chennai<br>Acharapakkam</p>
+            </div>
+        </div>
+        <div class="rating">
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+        </div>
+        <p class="review-text">"Excellent service and transparency in all dealings.."</p>
+        <div class="quote-icon">”</div>
+       </div>
+        <div class="testimonial-card">
+         <div class="card-header">
+          <div class="initials-circle">
+              <p>PS</p>
+            </div>
+            <div class="reviewer-info">
+              <h4>Priya Sharma</h4>
+               <p class="reviewer-location">Madipakkam<br>Chitra Garden</p>
+            </div>
+        </div>
+        <div class="rating">
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+        </div>
+        <p class="review-text">"The zero down payment option was a game-changer for us. The team was very supportive throughout the process and the location is perfect for future growth."</p>
+        <div class="quote-icon">”</div>
+       </div>
+        <div class="testimonial-card">
+         <div class="card-header">
+          <div class="initials-circle">
+              <p>VR</p>
+            </div>
+            <div class="reviewer-info">
+              <h4>Venkatesh Raman</h4>
+               <p class="reviewer-location">Kanchipuram<br>Kanchi Kuberi Nagar</p>
+            </div>
+        </div>
+        <div class="rating">
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+        </div>
+        <p class="review-text">"15 years of trust and it shows! Professional team, quality locations, and fair pricing. We've invested in two plots and planning for more."</p>
+        <div class="quote-icon">”</div>
+       </div>
+        <div class="testimonial-card">
+         <div class="card-header">
+          <div class="initials-circle">
+              <p>AD</p>
+            </div>
+            <div class="reviewer-info">
+              <h4>Anitha Devi</h4>
+               <p class="reviewer-location">Chennai<br>Swathi Nagar</p>
+            </div>
+        </div>
+        <div class="rating">
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+         <span class="star">&#9733;</span>
+        </div>
+        <p class="review-text">"As a working woman, the flexible payment plans and transparent documentation made the entire process stress-free. Thank you for making our dreams come true!"</p>
+        <div class="quote-icon">”</div>
+       </div>
+    </div>
+    <div class="cta-section">
+      <div class="cta-content">
+         <h2 class="cta-heading">Join Our Happy Customer Family</h2>
+         <p class="cta-text">
+           Be part of our success story. Contact us today to learn more about our current projects and investment opportunities.
+         </p>
+       <div class="cta-buttons">
+         <a href="#" class="btn btn-primary">Contact Us Today</a>
+         <a href="#" class="btn btn-secondary">Schedule Site Visit</a>
+       </div>
+      </div>
+    </div>
+    <!-- Footer bar -->
+
+     <footer class="main-footer">
+       <div class="footer-container">
+         <div class="footer-column brand-info">
+          <div class="logo-group">
+            <div class="logo-box">
+              <img src="images/logo.jpg" alt="Shree Kandha Realty Developers Logo" class="logo">
+            </div>
+            <div class="brand-text">
+             <h3>Shree Kandha Realty Developers</h3>
+             <p class="slogan">Land for everyone. Dreams made Real</p>
+            </div>
+           </div>
+           <p class="company-desc">
+               With over 15 years of excellence in real estate development, we've helped over 5000+ families find their dream homes across 50+ successful projects.
+           </p>
+           <div class="stat-group">
+           <div class="stats-item">
+               <h4 class="stats-number">15+</h4>
+               <p class="stats-label">Years</p>
+            </div>
+            <div class="stats-item">
+              <h4 class="stats-number">5000+</h4>
+              <p class="stats-label">Happy Customers</p>
+            </div>
+            <div class="stats-item">
+             <h4 class="stats-number">50+</h4>
+             <p class="stats-label">Projects</p>
+           </div>
+          </div>
+        </div>
+    
+        <div class="footer-column quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="projects.html">Projects</a></li>
+           <li><a href="About.html">About</a></li>
+           <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-column contact-info">
+           <h3>Contact Info</h3>
+           <ul>
+           <li><i class="fas fa-envelope"></i> <a href="mailto:shreekandharealty@gmail.com">shreekandharealty@gmail.com</a></li>
+           <li><i class="fas fa-phone"></i> <a href="tel:9952992324">99529 92324 / 99529 94324</a></li>
+           <li><i class="fas fa-map-marker-alt"></i> <span>#26, Manigandan Street, Iyyappan Nagar, Madipakkam Chennai - 600 091</span></li>
+          </ul>
+       </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p class="copyright">© 2025 Shree Kandha Realty Developers. All rights reserved.</p>
+      <p class="slogan-bottom">Land for everyone. Dreams made Real</p>
+    </div>
+</footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+        // Select all elements with the classes you want to animate
+        const animatedSections = document.querySelectorAll(
+        '.cta-section, .testimonials-container, .stats-section'
+        );
+        const animatedCards = document.querySelectorAll(
+        '.testimonial-card, .stat-item'
+       );
+
+       const elementsToAnimate = [...animatedSections, ...animatedCards];
+
+       // Function to check if an element is in the viewport
+       const isElementInViewport = (el) => {
+       const rect = el.getBoundingClientRect();
+       return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+       );
+     };
+
+     // Function to add the 'is-visible' class when in view
+     const handleScroll = () => {
+     elementsToAnimate.forEach((element) => {
+       if (isElementInViewport(element)) {
+         element.classList.add('is-visible');
+       }
+      });
+     };
+
+    // Add event listener for scroll and resize
+     window.addEventListener('scroll', handleScroll);
+     window.addEventListener('resize', handleScroll);
+
+    // Run on initial load to animate elements already in view
+    handleScroll();
+    });
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Initialize AOS and Feather Icons
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
