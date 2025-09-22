@@ -32,14 +32,6 @@
         body {
           font-family: 'Poppins', sans-serif;
             }
-
-        .stat-card {
-            transition: all 0.3s ease;
-        }
-        .stat-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
     </style>
 </head>
 </head>
@@ -75,6 +67,47 @@
             <a href="contact.html" class="block py-2 hover:text-gray-300">Contact</a>
         </div>
     </div>
+    <div class="contact-us-section">
+  <div class="contact-hero" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRi5K6eI6dGC_QcUXl3n_6gyRQMGZx6eQZuw&s');">
+    <div class="hero-overlay">
+      <h2 class="hero-title">Contact Us</h2>
+      <p class="hero-subtitle">
+        Get in touch with us today. We're here to help make your dreams come true.
+      </p>
+    </div>
+  </div>
+  
+  <div class="contact-cards-container">
+    <div class="contact-card">
+      <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+      <h3 class="card-title">Call Us</h3>
+      <p>99529 92324</p>
+      <p>99529 94324</p>
+      <a href="tel:9952992324" class="contact-button">Call Now</a>
+    </div>
+    
+    <div class="contact-card">
+      <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+      <h3 class="card-title">Email Us</h3>
+      <p>shreekandharealty@gmail.com</p>
+      <a href="mailto:shreekandharealty@gmail.com" class="contact-button">Send Email</a>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+      <h3 class="card-title">Visit Us</h3>
+      <p>#26, Manigandan Street<br>Iyyappan Nagar, Madipakkam<br>Chennai - 600 091</p>
+      <a href="#" class="contact-button" onclick="openGoogleMaps()">Get Directions</a>
+    </div>
+    
+    <div class="contact-card">
+      <div class="icon-circle"><i class="far fa-clock"></i></div>
+      <h3 class="card-title">Office Hours</h3>
+      <p>Monday - Saturday: 9:00 AM - 7:00 PM<br>Sunday: 10:00 AM - 5:00 PM</p>
+      <a href="#" class="contact-button">Schedule Visit</a>
+    </div>
+  </div>
+</div>
     <!-- Contact -->
     <section id="contact" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
@@ -86,7 +119,7 @@
                         <form>
                             <div class="mb-4">
                                 <label class="block text-gray-700 mb-2" for="name">Name</label>
-                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                <input type="text" id="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
                             </div>
                             <div class="mb-4">
                                 <label class="block text-gray-700 mb-2" for="email">Email</label>
@@ -94,11 +127,11 @@
                             </div>
                             <div class="mb-4">
                                 <label class="block text-gray-700 mb-2" for="phone">Phone</label>
-                                <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                <input type="tel" id="phone" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
                             </div>
                             <div class="mb-4">
                                 <label class="block text-gray-700 mb-2" for="message">Message</label>
-                                <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                                <textarea id="message" required rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
                             </div>
                             <button type="submit" class="bg-primary text-accent px-6 py-3 rounded-lg font-bold hover:bg-opacity-90 transition duration-300 w-full">Send Message</button>
                         </form>
@@ -114,7 +147,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-gray-800">Email</h4>
-                                    <p class="text-gray-600">Shreekandharealty@gmail.com</p>
+                                    <p class="text-gray-600"><a href="mailto:shreekandharealty@gmail.com">Shreekandharealty@gmail.com</a></p>
                                 </div>
                             </div>
                             <div class="flex items-start">
@@ -123,7 +156,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-gray-800">Phone</h4>
-                                    <p class="text-gray-600">+91 99529 92324 / +91 99529 94324</p>
+                                    <p class="text-gray-600"><a href="tel:+91 95529 92324">+91 99529 92324</a> / <a href="tel:+91 95529 94324">+91 99529 94324</a></p>
                                 </div>
                             </div>
                             <div class="flex items-start">
@@ -136,10 +169,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mt-8">
+                        <!-- <div class="mt-8">
                             <h4 class="font-bold text-gray-800 mb-4">Connect With Us</h4>
-                            <div class="flex space-x-4">
-                                <a href="#" class="text-primary hover:text-opacity-80">
+                            <div class="flex space-x-4"> -->
+                                <!-- <a href="#" class="text-primary hover:text-opacity-80">
                                     <i data-feather="facebook"></i>
                                 </a>
                                 <a href="#" class="text-primary hover:text-opacity-80">
@@ -149,10 +182,10 @@
                                     <i data-feather="instagram"></i>
                                 </a>
                                 <a href="#" class="text-primary hover:text-opacity-80">
-                                    <i data-feather="linkedin"></i>
-                                </a>
+                                    <i data-feather="linkedin"></i> -->
+                                <!-- </a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -212,6 +245,7 @@
   
     <div class="footer-bottom">
       <p class="copyright">© 2025 Shree Kandha Realty Developers. All rights reserved.</p>
+      <p class="copyright">Developed and Maintained by <a href="https://vaishhhdeveloper.github.io/VaisalyPortfolio/" style="color: #00a877">Vaisaly M</a></p>
       <p class="slogan-bottom">Land for everyone. Dreams made Real</p>
     </div>
 </footer>
@@ -231,5 +265,36 @@
             once: true
         });
         feather.replace();
+         document.querySelector("form").addEventListener("submit", function(e) {
+         e.preventDefault(); // Prevent page refresh
+
+        // Collect form values
+        let name = document.getElementById("name").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let phone = document.getElementById("phone").value.trim();
+        let message = document.getElementById("message").value.trim();
+
+
+        let whatsappNumber = "919952992324"; 
+
+    // Format the WhatsApp message
+    let whatsappMessage = `📩 New Contact Form Submission:%0A
+    *Name:* ${name}%0A
+    *Email:* ${email}%0A
+    *Phone:* ${phone}%0A
+    *Message:* ${message}`;
+
+    // WhatsApp link
+    let url = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+    // Open WhatsApp
+    window.open(url, "_blank").focus();
+    });
+     function openGoogleMaps() {
+    // Replace with your business/place address or coordinates
+    let destination = "26,Manigandan Street, Ayyappan Nagar, Madipakkam Chennai - 600 091"; // Example: Google HQ
+    let url = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination)}`;
+    window.open(url, "_blank");
+     }
     </script>
 </body>

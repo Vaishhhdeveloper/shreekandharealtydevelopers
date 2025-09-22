@@ -138,3 +138,671 @@
 .slogan-bottom {
   margin: 0;
 }
+/* --- Main Contact Section --- */
+.contact-us-section {
+  font-family: poppins, sans-serif;
+}
+
+/* --- Contact Hero Banner --- */
+.contact-hero {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.contact-hero .hero-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-hero .hero-subtitle {
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* --- Contact Cards Grid --- */
+.contact-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: -80px auto 40px; /* Negative margin pulls cards up into the banner */
+  position: relative;
+  z-index: 10;
+  padding: 0 20px;
+}
+
+.contact-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  background-color: #e6f7f0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+.icon-circle i {
+  color: #00875a;
+  font-size: 28px;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #00875a;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #00875a;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #00875a;
+  color: #fff;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    }
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none; /* avoid blocking slide clicks */
+  }
+
+.owl-nav button {
+   background: rgba(0,0,0,0.5);
+   color: #fff !important;
+   border: none;
+   padding: 12px 18px;
+  font-size: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto; /* allow clicking arrows */
+  transition: background 0.3s ease;
+  }
+
+  .owl-nav button:hover {
+    background: rgba(0,0,0,0.8);
+    }
+
+  .stats-section {
+    padding: 80px 20px;
+    background-color: #fff;
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+  }
+
+  /* Header styling for the title and subheading */
+  .stats-header-container {
+    max-width: 600px;
+    margin: 0 auto 40px;
+  }
+
+  .stats-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #21450c;
+    margin-bottom: 10px;
+  }
+
+  .stats-subheading {
+    font-size: 16px;
+    color: #6c757d;
+    line-height: 1.5;
+  } 
+
+  /* Styling for the green stats bar */
+  .stats-bar {
+   display: flex;
+   justify-content: space-around; /* Distributes items evenly with space between them */
+   align-items: center;
+   background-color: #00a877; /* The vibrant green color */
+   color: #fff;
+   border-radius: 12px;
+   padding: 30px 20px;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+   /* Styling for each individual statistic item */
+  .stat-item {
+    text-align: center;
+    padding: 0 15px; /* Adds internal spacing to prevent items from touching */
+    }
+
+    .stat-number {
+       font-size: 32px;
+       font-weight: bold;
+       margin: 0;
+       line-height: 1.2;
+    }
+
+    .stat-label {
+       font-size: 14px;
+       margin: 5px 0 0;
+       opacity: 0.9;
+      }
+     /* Container for all testimonial cards */
+        .testimonials-container {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr); 
+           gap: 20px; 
+           padding: 20px;
+         }
+          /* .testimonials-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px;
+            padding: 20px;
+            } */
+
+        /* Styling for a single testimonial card */
+        .testimonial-card {
+           position: relative;
+           background-color: #fff;
+           border: 1px solid #e0e0e0;
+           border-radius: 15px;
+           padding: 25px;
+           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+           font-family: poppins, sans-serif;
+           display: flex;
+           flex-direction: column;
+        }
+
+        /* Header section with initials and name */
+       .card-header {
+          display: flex;
+          align-items: center;
+          margin-bottom: 15px;
+        }
+
+        .initials-circle {
+          width: 50px;
+          height: 50px;
+          background-color: #e6f7f0; /* Light green background */
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 15px;
+        }
+
+        .initials-circle p {
+          color: #38b2ac; /* Darker green for the text */
+          font-size: 18px;
+          font-weight: bold;
+          margin: 0;
+        }
+
+        .reviewer-info h4 {
+          margin: 0;
+          font-size: 16px;
+          font-weight: bold;
+          color: #333;
+        }
+
+        .reviewer-location {
+           font-size: 12px;
+           color: #555;
+           margin: 5px 0 0;
+        }
+
+        /* Star rating alignment */
+        .rating {
+         display: flex;
+         margin-bottom: 15px;
+        }
+
+        .star {
+          color: gold;
+          font-size: 20px;
+          margin-right: 2px;
+        }  
+
+         /* Review text styling */
+         .review-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 20px;
+         }
+
+         /* Quote icon styling */
+        .quote-icon {
+           position: absolute;
+           top: 15px;
+           right: 20px;
+           font-size: 50px;
+           color: #e0e0e0;
+           line-height: 1;
+           font-family: sans-serif; /* Use a basic font for the quotation mark */
+          }
+          /* Styling for the main container */
+          .cta-section {
+            padding: 80px 20px;
+            background-color: #f8f9fa; /* Light background to make the section stand out */
+            text-align: center;
+          }
+
+          /* Container for the text and buttons to manage width */
+          .cta-content {
+             max-width: 700px;
+             margin: 0 auto; /* This centers the content block itself */
+           }
+
+           /* Styling for the main heading */
+          .cta-heading {
+             font-size: 36px;
+             font-weight: bold;
+             color: #21450c; 
+             margin-bottom: 20px;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              }
+
+        /* Styling for the descriptive text */
+        .cta-text {
+          font-size: 16px;
+          color: #6c757d; /* A subtle gray color */
+          line-height: 1.6;
+          margin-bottom: 30px;
+        }
+
+        /* Container for the buttons to enable Flexbox centering */
+       .cta-buttons {
+         display: flex;
+         justify-content: center; /* Centers the buttons horizontally */
+         gap: 15px; /* Adds space between the buttons */
+         flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+        }
+
+        /* Common button styles */
+        .btn {
+           padding: 15px 30px;
+           border-radius: 8px;
+           font-size: 16px;
+           font-weight: 600;
+           text-decoration: none;
+           transition: all 0.3s ease;
+           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+           border: 1px solid transparent;
+        }
+
+        /* Primary button (Solid Green) */
+        .btn-primary {
+           background-color: #00875a;
+           color: #fff;
+           border-color: #00875a;
+         }
+
+        .btn-primary:hover {
+            background-color: #006e49;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Secondary button (Outlined) */
+        .btn-secondary {
+          background-color: #fff;
+          color: #00875a;
+          border-color: #00875a;
+        }
+
+       .btn-secondary:hover {
+          background-color: #f0fdf9;
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+         from {
+          opacity: 0;
+          transform: translateY(20px);
+         }
+        to {
+           opacity: 1;
+           transform: translateY(0);
+         }
+      }
+
+      /* Base styles for all animated elements */
+      .cta-section,
+      .testimonials-container,
+      .stats-section,
+      .testimonial-card,
+      .stat-item {
+           opacity: 0;
+           transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Fallback transition */
+      }
+
+      /* Class that triggers the animation when added by JavaScript */
+      .cta-section.is-visible,
+      .testimonials-container.is-visible,
+      .stats-section.is-visible {
+          animation: fadeInUp 1s ease-out forwards;
+       }
+
+       /* Individual card animation with staggered delays */
+       .testimonial-card.is-visible,
+       .stat-item.is-visible {
+          animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        /* Staggered delays for testimonial cards */
+        .testimonial-card.is-visible:nth-child(1) { animation-delay: 0.1s; }
+        .testimonial-card.is-visible:nth-child(2) { animation-delay: 0.2s; }
+        .testimonial-card.is-visible:nth-child(3) { animation-delay: 0.3s; }
+        .testimonial-card.is-visible:nth-child(4) { animation-delay: 0.4s; }
+
+        /* Staggered delays for stat items */
+        .stat-item.is-visible:nth-child(1) { animation-delay: 0.1s; }
+        .stat-item.is-visible:nth-child(2) { animation-delay: 0.2s; }
+        .stat-item.is-visible:nth-child(3) { animation-delay: 0.3s; }
+        .stat-item.is-visible:nth-child(4) { animation-delay: 0.4s; }
+
+/* --- About Us Section --- */
+.about-us-section {
+  text-align: center;
+  font-family: poppins, sans-serif;
+  background-color: #f8f9fa; /* Light gray background for the cards section */
+}
+
+/* --- Header Banner --- */
+.about-us-header {
+  background-color: #00875a; /* Deep green color */
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-slogan {
+  font-size: 20px;
+  opacity: 0.9;
+}
+/* --- Our Story Section --- */
+.our-story-section {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap; /* Allows columns to stack on smaller screens */
+  align-items: center;
+}
+
+/* --- Content Column --- */
+.story-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.story-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.story-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* --- Image Column --- */
+.story-image-column {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.story-image-wrapper {
+  position: relative;
+}
+
+.story-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+/* --- Green Overlay Badge --- */
+.trust-badge {
+  position: absolute;
+  bottom: 10px;
+  left: -50px; /* Adjust this value to position the badge correctly */
+  background-color: #00875a;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trust-number {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.trust-label {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .our-story-section {
+    flex-direction: column;
+  }
+
+  .story-image-column {
+    order: -1; /* Puts the image at the top on mobile */
+    margin-bottom: 20px;
+  }
+  
+  .trust-badge {
+    left: 20px; /* Adjust position for mobile layout */
+    bottom: 20px;
+  }
+}
+/* --- Our Values Section --- */
+.our-values-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+  font-family: poppins, sans-serif;
+}
+
+.values-header {
+  margin-bottom: 40px;
+}
+
+.values-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.values-subtitle {
+  font-size: 16px;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- Values Cards Grid --- */
+.values-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  text-align: center;
+  padding: 20px;
+}
+
+.value-icon-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #e6f7f0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+.value-icon-circle i {
+  font-size: 32px;
+  color: #20d880;
+}
+
+.value-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0000;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  font-size: 15px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+/* --- Mission/Vision Section --- */
+.mission-vision-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap; /* Allows cards to stack on smaller screens */
+}
+
+/* --- Card Styles --- */
+.mission-card,
+.vision-card {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mission-card {
+  background-color: #e6f7f0; /* Light green background */
+}
+
+.vision-card {
+  background-color: #e3f2fd; /* Light blue background */
+}
+
+.card-icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-icon-circle i {
+  font-size: 28px;
+  color: #fff;
+}
+
+.card-icon-circle.green {
+  background-color: #20d880;
+}
+
+.card-icon-circle.blue {
+  background-color: #42a5f5;
+}
+
+.mission-vision-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.mission-vision-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #6c757d;
+}

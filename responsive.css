@@ -1,5 +1,5 @@
- @media (max-width: 768px) {
-         .stats-bar {
+@media (max-width: 768px) {
+        .stats-bar {
              flex-direction: column; /* Changes the layout to a vertical stack */
              align-items: stretch;
              padding: 20px;
@@ -36,4 +36,166 @@
         .slogan-bottom {
           margin-top: 10px;
         }
+}
+@media (max-width: 768px) {
+ .stats-bar {
+   flex-direction: column; /* Changes the layout to a vertical stack */
+   align-items: stretch;
+   padding: 20px;
+ }
+ .stat-item {
+   margin-bottom: 20px;
+   }
+ .stat-item:last-child {
+   margin-bottom: 0;
+   }
+}
+/* Responsive Styles */
+
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+  /* Stats bar stacking */
+  .stats-bar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  .stat-item {
+    margin-bottom: 20px;
+  }
+
+  .stat-item:last-child {
+    margin-bottom: 0;
+  }
+
+
+  .testimonials-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For very small devices (480px and below) */
+@media (max-width: 480px) {
+  /* Reduce heading size */
+  .stats-heading {
+    font-size: 28px;
+  }
+
+  .stat-number {
+    font-size: 24px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+  }
+
+  /* Testimonial card padding adjust */
+  .testimonial-card {
+    padding: 15px;
+  }
+
+  .initials-circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .initials-circle p {
+    font-size: 14px;
+  }
+
+  .reviewer-info h4 {
+    font-size: 14px;
+  }
+
+  .review-text {
+    font-size: 14px;
+  }
+
+  .quote-icon {
+    font-size: 36px;
+  }
+}
+/* Tablets */
+@media (max-width: 992px) {
+  .about-title {
+    font-size: 36px;
+  }
+  .about-slogan {
+    font-size: 18px;
+  }
+  .story-title {
+    font-size: 28px;
+  }
+  .values-title {
+    font-size: 30px;
+  }
+  .mission-vision-section {
+    gap: 20px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 28px;
+  }
+  .about-slogan {
+    font-size: 16px;
+  }
+  .our-story-section {
+    flex-direction: column;
+    margin: 40px auto;
+  }
+  .story-image-column {
+    order: -1;
+    margin-bottom: 20px;
+  }
+  .trust-badge {
+    left: 20px;
+    bottom: 20px;
+  }
+  .values-title {
+    font-size: 26px;
+  }
+  .values-subtitle {
+    font-size: 14px;
+  }
+  .mission-vision-section {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .mission-card,
+  .vision-card {
+    padding: 25px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 22px;
+  }
+  .about-slogan {
+    font-size: 14px;
+  }
+  .story-title {
+    font-size: 22px;
+  }
+  .story-content p,
+  .mission-vision-section p,
+  .value-card p {
+    font-size: 14px;
+  }
+  .values-title {
+    font-size: 22px;
+  }
+  .trust-badge {
+    padding: 10px 15px;
+  }
+  .trust-number {
+    font-size: 18px;
+  }
 }
