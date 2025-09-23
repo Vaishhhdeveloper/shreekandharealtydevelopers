@@ -276,16 +276,77 @@ body {
   .owl-nav button:hover {
     background: rgba(0,0,0,0.8);
     }
+    .customers-section {
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-  .stats-section {
+    .customers-section h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #1b3d0f; /* dark green text */
+      margin-bottom: 10px;
+    }
+
+    .customers-section p {
+      font-size: 1rem;
+      color: #000;
+      margin-bottom: 40px;
+    }
+    .stat-box .defn {
+      color: #fff;
+      font-size: 1rem;
+      
+    }
+    /* Stats Container */
+    .stats-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background-color: #00a572; /* Green background */
+      padding: 30px 20px;
+      border-radius: 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .stat-box {
+      flex: 1 1 200px;
+      margin: 15px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .stat-box h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .stat-box p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .stats-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .stat-box {
+        margin: 15px 0;
+      }
+    }
+  /* .stats-section {
     padding: 80px 20px;
     background-color: #fff;
     font-family: 'poppins', sans-serif;
     text-align: center;
-  }
+  } */
 
   /* Header styling for the title and subheading */
-  .stats-header-container {
+  /* .stats-header-container {
     max-width: 600px;
     margin: 0 auto 40px;
   }
@@ -301,27 +362,27 @@ body {
     font-size: 16px;
     color: #6c757d;
     line-height: 1.5;
-  } 
+  }  */
 
   /* Styling for the green stats bar */
-  .stats-bar {
+  /* .stats-bar {
    display: flex;
-   justify-content: space-around; /* Distributes items evenly with space between them */
+   justify-content: space-around; 
    align-items: center;
-   background-color: #00a877; /* The vibrant green color */
+   background-color: #00a877; 
    color: #fff;
    border-radius: 12px;
    padding: 30px 20px;
    max-width: 1000px;
    margin: 0 auto;
-}
+} */
 
    /* Styling for each individual statistic item */
-  .stat-item {
+  /* .stat-item {
     text-align: center;
-    padding: 0 15px; /* Adds internal spacing to prevent items from touching */
-    }
-
+    padding: 0 15px; 
+    } */
+/* 
     .stat-number {
        font-size: 32px;
        font-weight: bold;
@@ -333,7 +394,7 @@ body {
        font-size: 14px;
        margin: 5px 0 0;
        opacity: 0.9;
-      }
+      } */
      /* Container for all testimonial cards */
         /* .testimonials-container {
            display: grid;
@@ -517,43 +578,43 @@ body {
   }
   .testimonial-content { margin-top: 10px; }
 }
-          .cta-section {
+          /* .cta-section {
             padding: 80px 20px;
             background-color: #f8f9fa; 
             text-align: center;
-          }
+          } */
 
           
-          .cta-content {
+          /* .cta-content {
              max-width: 700px;
              margin: 0 auto; 
-           }
+           } */
 
-          .cta-heading {
+          /* .cta-heading {
              font-size: 36px;
              font-weight: bold;
              color: #21450c; 
              margin-bottom: 20px;
              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-              }
+              } */
 
-        .cta-text {
+        /* .cta-text {
           font-size: 16px;
-          color: #6c757d; /* A subtle gray color */
+          color: #6c757d;
           line-height: 1.6;
           margin-bottom: 30px;
-        }
+        } */
 
         /* Container for the buttons to enable Flexbox centering */
-       .cta-buttons {
+       /* .cta-buttons {
          display: flex;
-         justify-content: center; /* Centers the buttons horizontally */
-         gap: 15px; /* Adds space between the buttons */
-         flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
-        }
+         justify-content: center; 
+         gap: 15px; 
+         flex-wrap: wrap;
+        } */
 
         /* Common button styles */
-        .btn {
+        /* .btn {
            padding: 15px 30px;
            border-radius: 8px;
            font-size: 16px;
@@ -562,10 +623,10 @@ body {
            transition: all 0.3s ease;
            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
            border: 1px solid transparent;
-        }
+        } */
 
         /* Primary button (Solid Green) */
-        .btn-primary {
+        /* .btn-primary {
            background-color: #00875a;
            color: #fff;
            border-color: #00875a;
@@ -574,10 +635,10 @@ body {
         .btn-primary:hover {
             background-color: #006e49;
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-        }
+        } */
 
         /* Secondary button (Outlined) */
-        .btn-secondary {
+        /* .btn-secondary {
           background-color: #fff;
           color: #00875a;
           border-color: #00875a;
@@ -586,9 +647,9 @@ body {
        .btn-secondary:hover {
           background-color: #f0fdf9;
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-        }
+        } */
         /* Animation Keyframes */
-        @keyframes fadeInUp {
+        /* @keyframes fadeInUp {
          from {
           opacity: 0;
           transform: translateY(20px);
@@ -597,42 +658,112 @@ body {
            opacity: 1;
            transform: translateY(0);
          }
-      }
+      } */
 
       /* Base styles for all animated elements */
-      .cta-section,
+      .join-section {
+      text-align: center;
+      padding: 70px 20px;
+      background-color: #f8f9fa; /* light grey background */
+    }
+
+    .join-section h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #1b3d0f; /* dark green text */
+      margin-bottom: 15px;
+    }
+
+    .join-section p {
+      font-size: 1rem;
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    /* Buttons Container */
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* Button Styles */
+    .btn {
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background-color: #00a572;
+      color: #fff;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #008a60;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #00a572;
+      border: 2px solid #00a572;
+    }
+
+    .btn-outline:hover {
+      background-color: #00a572;
+      color: #fff;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      .btn-container {
+        flex-direction: column;
+      }
+      .btn {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+      /* .cta-section,
       .testimonials-container,
       .stats-section,
       .testimonial-card,
       .stat-item {
            opacity: 0;
-           transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Fallback transition */
-      }
+           transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
+      } */
 
-      /* Class that triggers the animation when added by JavaScript */
-      .cta-section.is-visible,
+      
+      /* .cta-section.is-visible,
       .testimonials-container.is-visible,
       .stats-section.is-visible {
           animation: fadeInUp 1s ease-out forwards;
-       }
+       } */
 
        /* Individual card animation with staggered delays */
-       .testimonial-card.is-visible,
+       /* .testimonial-card.is-visible,
        .stat-item.is-visible {
           animation: fadeInUp 0.8s ease-out forwards;
-        }
+        } */
 
         /* Staggered delays for testimonial cards */
-        .testimonial-card.is-visible:nth-child(1) { animation-delay: 0.1s; }
+        /* .testimonial-card.is-visible:nth-child(1) { animation-delay: 0.1s; }
         .testimonial-card.is-visible:nth-child(2) { animation-delay: 0.2s; }
         .testimonial-card.is-visible:nth-child(3) { animation-delay: 0.3s; }
-        .testimonial-card.is-visible:nth-child(4) { animation-delay: 0.4s; }
+        .testimonial-card.is-visible:nth-child(4) { animation-delay: 0.4s; } */
 
         /* Staggered delays for stat items */
-        .stat-item.is-visible:nth-child(1) { animation-delay: 0.1s; }
+        /* .stat-item.is-visible:nth-child(1) { animation-delay: 0.1s; }
         .stat-item.is-visible:nth-child(2) { animation-delay: 0.2s; }
         .stat-item.is-visible:nth-child(3) { animation-delay: 0.3s; }
-        .stat-item.is-visible:nth-child(4) { animation-delay: 0.4s; }
+        .stat-item.is-visible:nth-child(4) { animation-delay: 0.4s; } */
 
 /* --- About Us Section --- */
 .about-us-section {
