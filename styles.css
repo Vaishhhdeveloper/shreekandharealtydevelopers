@@ -335,12 +335,12 @@ body {
        opacity: 0.9;
       }
      /* Container for all testimonial cards */
-        .testimonials-container {
+        /* .testimonials-container {
            display: grid;
            grid-template-columns: repeat(2, 1fr); 
            gap: 20px; 
            padding: 20px;
-         }
+         } */
           /* .testimonials-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -349,7 +349,7 @@ body {
             } */
 
         /* Styling for a single testimonial card */
-        .testimonial-card {
+        /* .testimonial-card {
            position: relative;
            background-color: #fff;
            border: 1px solid #e0e0e0;
@@ -361,7 +361,7 @@ body {
            flex-direction: column;
         }
 
-        /* Header section with initials and name */
+        
        .card-header {
           display: flex;
           align-items: center;
@@ -371,7 +371,7 @@ body {
         .initials-circle {
           width: 50px;
           height: 50px;
-          background-color: #e6f7f0; /* Light green background */
+          background-color: #e6f7f0; 
           border-radius: 50%;
           display: flex;
           justify-content: center;
@@ -380,7 +380,7 @@ body {
         }
 
         .initials-circle p {
-          color: #38b2ac; /* Darker green for the text */
+          color: #38b2ac; 
           font-size: 18px;
           font-weight: bold;
           margin: 0;
@@ -399,7 +399,7 @@ body {
            margin: 5px 0 0;
         }
 
-        /* Star rating alignment */
+       
         .rating {
          display: flex;
          margin-bottom: 15px;
@@ -410,8 +410,6 @@ body {
           font-size: 20px;
           margin-right: 2px;
         }  
-
-         /* Review text styling */
          .review-text {
             font-size: 15px;
             line-height: 1.6;
@@ -419,7 +417,7 @@ body {
             margin-bottom: 20px;
          }
 
-         /* Quote icon styling */
+         
         .quote-icon {
            position: absolute;
            top: 15px;
@@ -427,22 +425,110 @@ body {
            font-size: 50px;
            color: #e0e0e0;
            line-height: 1;
-           font-family: sans-serif; /* Use a basic font for the quotation mark */
+           font-family: sans-serif; 
           }
-          /* Styling for the main container */
+          */
+
+.testimonial-grid {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+/* .section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #131212;
+  font-weight: 600;
+} */
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  display: flex;
+  background: #f0f3f2;
+  border-radius: 15px;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.initials-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #00a877;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.testimonial-content {
+  flex: 1;
+}
+.stars span {
+  color: #ffc107;
+  font-size: 1rem;
+  display: inline-block;
+  animation: star-bounce 1.5s infinite;
+}
+.stars span:nth-child(2){ animation-delay: 0.1s; }
+.stars span:nth-child(3){ animation-delay: 0.2s; }
+.stars span:nth-child(4){ animation-delay: 0.3s; }
+.stars span:nth-child(5){ animation-delay: 0.4s; }
+
+@keyframes star-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.testimonial-content p {
+  font-style: italic;
+  color: #333;
+  margin: 10px 0;
+}
+.testimonial-content h4 {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.testimonial-content span {
+
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .testimonial-content { margin-top: 10px; }
+}
           .cta-section {
             padding: 80px 20px;
-            background-color: #f8f9fa; /* Light background to make the section stand out */
+            background-color: #f8f9fa; 
             text-align: center;
           }
 
-          /* Container for the text and buttons to manage width */
+          
           .cta-content {
              max-width: 700px;
-             margin: 0 auto; /* This centers the content block itself */
+             margin: 0 auto; 
            }
 
-           /* Styling for the main heading */
           .cta-heading {
              font-size: 36px;
              font-weight: bold;
@@ -451,7 +537,6 @@ body {
              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
               }
 
-        /* Styling for the descriptive text */
         .cta-text {
           font-size: 16px;
           color: #6c757d; /* A subtle gray color */
