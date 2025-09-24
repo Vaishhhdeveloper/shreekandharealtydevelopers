@@ -331,7 +331,7 @@ body {
     /* Responsive Adjustments */
     @media (max-width: 768px) {
       .stats-container {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
       }
       .stat-box {
